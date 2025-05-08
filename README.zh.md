@@ -6,9 +6,9 @@
 
 # 爱看相册
 
-"爱看相册"是一个<b>个人照片管理软件</b>，支持 Windows, Macos 和 Linux(即将发布).
+"爱看相册"是一个<b>照片管理软件</b>，支持 Windows, Macos 和 Linux(即将发布)。
 
-类似于 `Google Photos`, 它扫描你计算机的照片和视频，并构建个人媒体库，方便浏览搜索。而不需要把照片传输到云端，从而保护用户隐私。
+类似于 `Google Photos`, 它扫描你计算机的照片和视频，并构建个人媒体库，方便浏览搜索。而不需要把照片传输到云端，保护用户隐私。
 
 想尝试一下？ [马上下载](https://github.com/SelfPhotos/SelfPhotos/releases/latest)
 
@@ -19,7 +19,7 @@
   <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/wechat-qrcode.jpg?raw=true" alt="Wechat QR Code" height="150">
 </p>
 
-# 🌠 软件截图
+# 🌠 截图
 
 ![Screenshot 1](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-1.png?raw=true)
 
