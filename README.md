@@ -40,9 +40,8 @@ Or, Visit out official site: <a href="https://selfphotos.com/">https://selfphoto
 
 1. **Timeline View – Quickly locate your memories**
 2. **Folder Structure Preserved - Keep media organized as it is**
-3. **Watch Mode – Automatically sync and update your media library in real-time**
-4. **Privacy - 100% local & offline – Your photos, your control**
-5. **Unlimited Storage: Only restricted by your available disk space**
+3. **Privacy - 100% local & offline – Your photos, your control**
+4. **Unlimited Storage: Only restricted by your available disk space**
 
 # 🌐 Community
 
