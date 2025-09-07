@@ -62,7 +62,7 @@ Think of it as your localized Google Photos, designed with privacy, ownership, a
 
 ![Screenshot: mobile app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-mobile.png?raw=true)
 
-<p align="center">Mobile APP, from paring to backed up</p>
+<p align="center">Mobile APP, from connecting to backing up</p>
 
 ## Desktop APP
 

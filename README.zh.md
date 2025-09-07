@@ -59,12 +59,6 @@
 - 手机备份照片视频，或浏览照片视频，不会做速度限制，你可以跑慢局域网带宽
 - 不限制容量，不限制速度，并且，都是免费提供给您，因为那是您的设备和网络
 
-# ⬇️ 下载
-
-- (推荐)扫码关注微信公众号，获取最新 **桌面端程序** 和 **移动端APP** **稳定版**下载链接，点击公众号菜单栏入群，可获取最新信息和**内测版**下载链接<br />
-<img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/wechat-qrcode.jpg?raw=true" alt="Wechat QR Code" height="150">
-- 从官网网站 [https://aikanxiangce.com/download](https://aikanxiangce.com/download) 下载**稳定版** **桌面端程序** 和 **移动端APP**
-
 # 🌠 截图
 
 ## 手机APP
@@ -94,3 +88,9 @@
 ![Screenshot: importing photos from mobile device](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-importing.png?raw=true)
 
 <p align="center">从手机APP备份照片</p>
+
+# ⬇️ 下载
+
+- (推荐)扫码关注微信公众号，获取最新 **桌面端程序** 和 **移动端APP** **稳定版**下载链接，点击公众号菜单栏入群，可获取最新信息和**内测版**下载链接<br />
+<img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/wechat-qrcode.jpg?raw=true" alt="Wechat QR Code" height="150">
+- 从官网网站 <a href="https://aikanxiangce.com/download">https://aikanxiangce.com/download</a> 下载
