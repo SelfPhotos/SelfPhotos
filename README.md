@@ -5,7 +5,8 @@
 
 <p align="center">English | <a href="./README.zh.md">中文</a></p>
 
-**Self Photos** is a **self-hosted photo and video management solution** for all major platforms — Windows, macOS, Linux (coming soon), Android, and iOS.
+
+**Self Photos** is a **self-hosted cross-platform photo/video management tool** written in **Rust** programming language, available for all major platforms — Windows, macOS, Linux (coming soon), Android, and iOS.
 Think of it as your localized Google Photos, designed with privacy, ownership, and full control in mind.
 
 > 👏 Join [Discord](https://discord.gg/VCqXcAz6Js) | Follow on [X(Twitter)](https://x.com/wikkefly)
@@ -23,7 +24,7 @@ Think of it as your localized Google Photos, designed with privacy, ownership, a
 - Favorite photos/videos for quick access
 - Open photos/videos with your system’s default apps
 - Locate and open files directly in the system’s file explorer
-- Features reminiscent of the beloved Google Picasa (now discontinued)
+- Features reminiscent of the beloved `Google Picasa` (now discontinued)
 
 ## 2. Mobile Albums Backup to Computer or External Drive
 
@@ -34,7 +35,7 @@ Think of it as your localized Google Photos, designed with privacy, ownership, a
 - Flexible naming rules for subfolders and filenames, e.g `E:/Backup/iPhone 16 Pro Max/2025/2025-12/2025.12.01_IMG_1234.jpg`
 - Support concurrent uploads of multiple photos/videos
 
-## 3. Great Photo Browsing Experience
+## 3. Excellent Photo Browsing Experience like `Google Photos`
 
 - Timeline browsing by **shooting date**
 - Custom scroll bar for quickly jumping to a specific month/year
@@ -43,7 +44,7 @@ Think of it as your localized Google Photos, designed with privacy, ownership, a
 - Optimized to handle **hundreds of thousands of photos** while staying smooth
 - Split-view preview for side-by-side photo comparison
 
-## 4. Privacy First
+## 4. Privacy Always First
 
 - Works fully offline — no internet required
 - Your photos/videos never leave your devices; only indexed and displayed locally
@@ -54,19 +55,6 @@ Think of it as your localized Google Photos, designed with privacy, ownership, a
 - Backup storage is limited only by the available space on your own disks
 - No speed throttling — transfer as fast as your LAN allows
 - No limits, no subscriptions — because it’s **your devices and your network**
-
-<p>
-  👏 Join Discord community for the latest information
-  <br />
-  <a href="https://discord.gg/VCqXcAz6Js">
-    <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/discord.png?raw=true" height="80" alt="Discord" />
-  </a>
-</p>
-
-# ⬇️ Download
-
-Download **desktop installer** and **mobile APP** at [https://selfphotos.com/download](https://selfphotos.com/download)
-
 
 # 🌠 Screenshot
 
@@ -97,3 +85,7 @@ Download **desktop installer** and **mobile APP** at [https://selfphotos.com/dow
 ![Screenshot: importing photos from mobile device](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-importing.png?raw=true)
 
 <p align="center">Importing photos/videos from mobile devices</p>
+
+# ⬇️ Download
+
+Download **Windows/MacOS/Linux installer** and **Android/iOS APP** at [https://selfphotos.com/download](https://selfphotos.com/download)
