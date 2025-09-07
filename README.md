@@ -1,52 +1,99 @@
 <h1 align="center">
   <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/logo.png?raw=true" height="80" alt="Aicasa Logo" />
+  <p>Self Photos</p>
 </h1>
 
 <p align="center">English | <a href="./README.zh.md">中文</a></p>
 
-# <a href="https://selfphotos.com/">Self Photos</a>
+**Self Photos** is a **self-hosted photo and video management solution** for all major platforms — Windows, macOS, Linux (coming soon), Android, and iOS.
+Think of it as your localized Google Photos, designed with privacy, ownership, and full control in mind.
 
-Self Photos is a <b>Self-Hosted Photo Management Software</b> for Windows, Macos and Linux(coming soon).
+> 👏 Join [Discord](https://discord.gg/VCqXcAz6Js) | Follow on [X(Twitter)](https://x.com/wikkefly)
 
-Like `Google Photos`, but it scans and organizes your photo and video library <b>locally</b> on your computer to ensure <b>privacy</b>, instead of uploading them to the cloud.
+# ✨ Core Features
 
-Want a try? Just [Download Now](https://github.com/SelfPhotos/SelfPhotos/releases/latest)
+## 1. Scanning Computer Disk and Build Local Media Library
 
-Or, Visit out official site: <a href="https://selfphotos.com/">https://selfphotos.com/</a>
+- Define custom scan paths
+- Support for scanning network drives, such as SMB-mounted drives (Windows) or directories (Unix)
+- Nested scanning rules: exclude certain folders, but allow subpaths inside them to be included
+- Threshold settings for filtering out small files (e.g., icons, cache images)
+- Built with Rust for maximum performance and safety, ensuring a smooth experience
+- Parse and extract photo/video metadata, organize by shooting date, and browse via timeline
+- Favorite photos/videos for quick access
+- Open photos/videos with your system’s default apps
+- Locate and open files directly in the system’s file explorer
+- Features reminiscent of the beloved Google Picasa (now discontinued)
+
+## 2. Mobile Albums Backup to Computer or External Drive
+
+- Install the **Self Photos** mobile app and pair with the desktop application on the same LAN
+- **Automatic backup**: selected mobile albums are backed up automatically
+- **Manual backup**: choose specific photos/videos to back up
+- Assign different backup paths for each mobile device
+- Flexible naming rules for subfolders and filenames, e.g `E:/Backup/iPhone 16 Pro Max/2025/2025-12/2025.12.01_IMG_1234.jpg`
+- Support concurrent uploads of multiple photos/videos
+
+## 3. Great Photo Browsing Experience
+
+- Timeline browsing by **shooting date**
+- Custom scroll bar for quickly jumping to a specific month/year
+- Browse by your OS’s original folder structure for familiarity
+- Thumbnail options: keep original aspect ratio or crop to square
+- Optimized to handle **hundreds of thousands of photos** while staying smooth
+- Split-view preview for side-by-side photo comparison
+
+## 4. Privacy First
+
+- Works fully offline — no internet required
+- Your photos/videos never leave your devices; only indexed and displayed locally
+- Mobile backup requires desktop and mobile to be on the same LAN (internet connection not required)
+
+## 5. Unlimited Storage & Speed
+
+- Backup storage is limited only by the available space on your own disks
+- No speed throttling — transfer as fast as your LAN allows
+- No limits, no subscriptions — because it’s **your devices and your network**
 
 <p>
-  Or, 👏 Join our communities:
+  👏 Join Discord community for the latest information
   <br />
   <a href="https://discord.gg/VCqXcAz6Js">
     <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/discord.png?raw=true" height="80" alt="Discord" />
   </a>
 </p>
 
+# ⬇️ Download
+
+Download **desktop installer** and **mobile APP** at [https://selfphotos.com/download](https://selfphotos.com/download)
+
+
 # 🌠 Screenshot
+
+## Mobile APP
+
+![Screenshot: mobile app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-mobile.png?raw=true)
+
+<p align="center">Mobile APP, from paring to backed up</p>
+
+## Desktop APP
 
 ![Screenshot 1](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-1.png?raw=true)
 
-<p align="center">Timeline view of you library</p>
+<p align="center">Timeline View</p>
 
 ![Screenshot 2](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-2.png?raw=true)
 
-<p align="center">Folder structure preserved</p>
+<p align="center">Folder Structure View</p>
 
 ![Screenshot 3](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-3.png?raw=true)
 
-<p align="center">Preview your moment in light/dark mode</p>
+<p align="center">Preview in light/dark mode</p>
 
-# 🌟 Key Features
+![Screenshot: Pairing mobile with desktop](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-pairing.png?raw=true)
 
-1. **Timeline View – Quickly locate your memories**
-2. **Folder Structure Preserved - Keep media organized as it is**
-3. **Privacy - 100% local & offline – Your photos, your control**
-4. **Unlimited Storage: Only restricted by your available disk space**
+<p align="center">Pairing mobile with desktop, and configure backup path, dir and file naming pattern</p>
 
-# 🌐 Community
+![Screenshot: importing photos from mobile device](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-importing.png?raw=true)
 
-👏 Join [Discord](https://discord.gg/VCqXcAz6Js) | [X(Twitter)](https://x.com/wikkefly)
-
-👏 Scan to join Wechat<br />
-
-<img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/wechat-qrcode.jpg?raw=true" alt="Wechat QR Code" height="150">
+<p align="center">Importing photos/videos from mobile devices</p>
