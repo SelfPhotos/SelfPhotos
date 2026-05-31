@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/logo.png?raw=true" height="80" alt="Aicasa Logo" />
+  <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/logo.png?raw=true" height="80" alt="Self Photos Logo" />
   <p>Self Photos</p>
 </h1>
 
-<p align="center">English | <a href="./README.zh.md">中文</a></p>
+<p align="center">English | <a href="./README.zh.md">中文</a> | <a href="./README.de.md">Deutsch</a> | <a href="./README.es.md">Español</a> | <a href="./README.fr.md">Français</a> | <a href="./README.hi.md">हिन्दी</a> | <a href="./README.it.md">Italiano</a> | <a href="./README.ja.md">日本語</a> | <a href="./README.pt.md">Português</a> | <a href="./README.ru.md">Русский</a></p>
 
 **Self Photos** is a **cross-platform photo and video management tool** built with Rust, available for Windows, macOS, Linux (coming soon), Android, and iOS.
 

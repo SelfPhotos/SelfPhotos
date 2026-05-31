@@ -3,7 +3,7 @@
   <p>爱看相册</p>
 </h1>
 
-<p align="center"><a href="https://github.com/SelfPhotos/SelfPhotos">English</a> | 中文</p>
+<p align="center"><a href="./README.md">English</a> | 中文 | <a href="./README.de.md">Deutsch</a> | <a href="./README.es.md">Español</a> | <a href="./README.fr.md">Français</a> | <a href="./README.hi.md">हिन्दी</a> | <a href="./README.it.md">Italiano</a> | <a href="./README.ja.md">日本語</a> | <a href="./README.pt.md">Português</a> | <a href="./README.ru.md">Русский</a></p>
 
 **爱看相册**是一款由 Rust 打造的**跨平台照片/视频管理工具**，支持 Windows、macOS 和 Linux（即将发布），以及 Android、iOS。
 
