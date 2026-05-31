@@ -84,6 +84,9 @@
 - **无限存储与速度**：容量只取决于你的硬盘，传输速度只取决于你的局域网和设备性能
 - **隐私安全**：软件离线也能使用；照片视频不会离开你的设备，手机备份只需要处在同一局域网
 
+![Screenshot: duplicate detection](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/duplicate.png?raw=true)
+
+
 # ⬇️ 下载
 
 - (推荐)扫码关注微信公众号，获取最新 **桌面端程序** 和 **移动端APP** **稳定版**下载链接，点击公众号菜单栏入群，可获取最新信息和**内测版**下载链接<br />
