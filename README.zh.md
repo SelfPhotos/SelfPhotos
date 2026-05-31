@@ -54,7 +54,7 @@
 - **内置视频播放器**：直接在应用中播放视频，支持格式取决于系统解码器
 - **多种浏览方式**：支持时间线、原始目录结构、收藏、系统默认应用打开，以及定位到文件所在系统文件夹
 
-![Screenshot: timeline](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/feat-timeline2.png?raw=true)
+![Screenshot: timeline](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/timeline.png?raw=true)
 
 ## 四、在地图上查看回忆
 
