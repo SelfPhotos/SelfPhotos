@@ -5,87 +5,77 @@
 
 <p align="center">English | <a href="./README.zh.md">中文</a></p>
 
+**Self Photos** is a **cross-platform photo and video management tool** built with Rust, available for Windows, macOS, Linux (coming soon), Android, and iOS.
 
-**Self Photos** is a **self-hosted cross-platform photo/video management tool** written in **Rust** programming language, available for all major platforms — Windows, macOS, Linux (coming soon), Android, and iOS.
-Think of it as your localized Google Photos, designed with privacy, ownership, and full control in mind.
+Think of it as a fully local Google Photos for your own devices. It helps organize photos and videos from your computer, external drives, NAS, and phones while keeping privacy and control first: your media is not uploaded to the cloud and stays on your own devices.
+
+![Screenshot: desktop app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/self-photos-screenshot.png?raw=true)
 
 > 👏 Join [Discord](https://discord.gg/VCqXcAz6Js) | Follow on [X(Twitter)](https://x.com/wikkefly)
 
 # ✨ Core Features
 
-## 1. Scanning Computer Disk and Build Local Media Library
+## 1. Bring Scattered Photos and Videos Together
 
-- Define custom scan paths
-- Support for scanning network drives, such as SMB-mounted drives (Windows) or directories (Unix)
-- Nested scanning rules: exclude certain folders, but allow subpaths inside them to be included
-- Threshold settings for filtering out small files (e.g., icons, cache images)
-- Built with Rust for maximum performance and safety, ensuring a smooth experience
-- Parse and extract photo/video metadata, organize by shooting date, and browse via timeline
-- Favorite photos/videos for quick access
-- Open photos/videos with your system’s default apps
-- Locate and open files directly in the system’s file explorer
-- Features reminiscent of the beloved `Google Picasa` (now discontinued)
+Self Photos scans photos and videos from your computer, external drives, attached disks, and NAS, then builds them into one local media library.
 
-## 2. Mobile Albums Backup to Computer or External Drive
+- **One-click scanning**: quickly discover photos and videos on your computer and automatically extract shooting time, location, media type, and other metadata
+- **Flexible data sources**: add local folders, external drives, network locations, and more; the previous folder page has been upgraded into a clearer data source page with an improved folder list view
+- **SMB support**: scan and index photos and videos on a NAS directly through SMB without copying files to your computer first
+- **Flexible scan rules**: specify scan paths, exclude folders, configure nested path rules, and filter out icons, cache images, and other irrelevant small files by file size threshold
+- **File monitoring and manual scanning**: local data sources can be monitored in real time and update the index dynamically; non-local data sources can be scanned manually when needed
+- **Live Photo detection**: automatically detect and bind Live Photos across data sources, keeping still photos and motion clips together
 
-- Install the **Self Photos** mobile app and pair with the desktop application on the same LAN
-- **Automatic backup**: selected mobile albums are backed up automatically
-- **Manual backup**: choose specific photos/videos to back up
-- Assign different backup paths for each mobile device
-- Flexible naming rules for subfolders and filenames, e.g `E:/Backup/iPhone 16 Pro Max/2025/2025-12/2025.12.01_IMG_1234.jpg`
-- Support concurrent uploads of multiple photos/videos
+![Screenshot: scan select](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/scan-screenshot.png?raw=true)
 
-## 3. Excellent Photo Browsing Experience like `Google Photos`
+## 2. Back Up Mobile Albums to Your Computer
 
-- Timeline browsing by **shooting date**
-- Custom scroll bar for quickly jumping to a specific month/year
-- Browse by your OS’s original folder structure for familiarity
-- Thumbnail options: keep original aspect ratio or crop to square
-- Optimized to handle **hundreds of thousands of photos** while staying smooth
-- Split-view preview for side-by-side photo comparison
+After installing the Self Photos mobile app, pair it with the desktop app on the same local network to back up photos and videos from Android and iOS devices to your computer or external drive.
 
-## 4. Privacy Always First
-
-- Works fully offline — no internet required
-- Your photos/videos never leave your devices; only indexed and displayed locally
-- Mobile backup requires desktop and mobile to be on the same LAN (internet connection not required)
-
-## 5. Unlimited Storage & Speed
-
-- Backup storage is limited only by the available space on your own disks
-- No speed throttling — transfer as fast as your LAN allows
-- No limits, no subscriptions — because it’s **your devices and your network**
-
-# 🌠 Screenshot
-
-## Mobile APP
+- **Plug in and back up**: after selecting mobile albums, new photos and videos can sync automatically to your computer
+- **Manual backup**: choose specific photos and videos to back up whenever you need
+- **Date range backup**: back up only recent photos and videos, useful for quickly organizing new content
+- **Original quality**: save original photos and videos without compression or quality loss
+- **Independent multi-device management**: set separate backup folders for different phones, with rules for generated subfolders and filenames, such as `E:/Backup/iPhone 16 Pro Max/2025/2025-12/2025.12.01_IMG_1234.jpg`
+- **Local network transfer**: backups do not use mobile data; speed depends on your local network and disk performance
 
 ![Screenshot: mobile app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-mobile.png?raw=true)
 
-<p align="center">Mobile APP, from connecting to backing up</p>
+## 3. Revisit Memories by Timeline
 
-## Desktop APP
+Self Photos organizes your library by the real shooting time of photos and videos, so you can return to a specific day, month, or year like flipping through a diary.
 
-![Screenshot 1](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-1.png?raw=true)
+- **Automatic archive by shooting date**: photos and videos are arranged by when they were taken, not just by file creation time
+- **Fast date jumping**: quickly jump to a specific year or month through the timeline and date navigation
+- **Smooth browsing for large libraries**: optimized desktop experience that stays fluid even with hundreds of thousands of photos
+- **Hover preview**: hover to quickly preview photos and videos, making browsing and filtering much faster
+- **Built-in video player**: play videos directly in the app, with format support depending on your system codecs
+- **Multiple ways to browse**: use timeline, original folder structure, favorites, the system default app, or reveal files in the system file manager
 
-<p align="center">Timeline View</p>
+![Screenshot: timeline](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/timeline.png?raw=true)
 
-![Screenshot 2](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-2.png?raw=true)
+## 4. Organize Important Moments with Albums
 
-<p align="center">Folder Structure View</p>
+In addition to automatic organization by time and folder structure, Self Photos includes albums for actively collecting travel, family, project, holiday, or theme-based media.
 
-![Screenshot 3](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-3.png?raw=true)
+- **Create themed albums**: collect photos and videos from different sources and dates into one album
+- **Keep original files in place**: albums organize and display media without moving the original files
+- **Made for long-term collections**: weddings, children growing up, travel sets, creative assets, and other meaningful collections can each have their own album
 
-<p align="center">Preview in light/dark mode</p>
+![Screenshot: album](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/album.png?raw=true)
 
-![Screenshot: Pairing mobile with desktop](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-pairing.png?raw=true)
+## 5. Clean Up, Manage, and Enjoy a New Desktop Experience
 
-<p align="center">Pairing mobile with desktop, and configure backup path, dir and file naming pattern</p>
+Self Photos is not only for viewing. It also helps you manage your media library more efficiently.
 
-![Screenshot: importing photos from mobile device](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-importing.png?raw=true)
+- **Duplicate detection**: intelligently find duplicate photos and videos, preview them, and delete them in batches to clean up your library
+- **New design system**: a more modern UI and desktop software experience for long-term management of large photo and video libraries
+- **Favorites and comparison preview**: quickly favorite important media and compare photos side by side in the preview page
+- **Unlimited storage and speed**: capacity is limited only by your disks, and transfer speed is limited only by your local network and device performance
+- **Private and secure**: the app works offline; photos and videos do not leave your devices, and mobile backup only requires devices to be on the same local network
 
-<p align="center">Importing photos/videos from mobile devices</p>
+![Screenshot: duplicate detection](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/duplicate.png?raw=true)
 
 # ⬇️ Download
 
-Download **Windows/MacOS/Linux installer** and **Android/iOS APP** at [https://selfphotos.com/download](https://selfphotos.com/download)
+Download the latest **desktop installer** and **mobile app** from the official website: [https://selfphotos.com/download](https://selfphotos.com/download)
