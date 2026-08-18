@@ -5,77 +5,129 @@
 
 <p align="center"><a href="./README.md">English</a> | <a href="./README.zh.md">中文</a> | <a href="./README.de.md">Deutsch</a> | <a href="./README.es.md">Español</a> | <a href="./README.fr.md">Français</a> | <a href="./README.hi.md">हिन्दी</a> | Italiano | <a href="./README.ja.md">日本語</a> | <a href="./README.pt.md">Português</a> | <a href="./README.ru.md">Русский</a></p>
 
-**Self Photos** è uno **strumento multipiattaforma per la gestione di foto e video** costruito con Rust, disponibile per Windows, macOS, Linux (a breve), Android e iOS.
+**Self Photos** è una **app desktop multipiattaforma per la gestione di foto e video**, sviluppata con Rust. Supporta Windows, macOS e Linux (in arrivo) e offre app per Android e iOS per eseguire il backup degli album del telefono sul computer. Le funzionalità principali includono:
 
-Pensalo come una versione completamente locale di Google Foto per i tuoi dispositivi. Ti aiuta a organizzare foto e video dal computer, da dischi esterni, NAS e telefoni, mettendo privacy e controllo al primo posto: i tuoi contenuti non vengono caricati nel cloud e restano sui tuoi dispositivi.
+## ✨ Funzionalità principali
+
+- 💽 **Libreria multimediale unificata**: analizza foto e video dal computer, da unità esterne e NAS e riuniscili in un’unica libreria locale.
+- 📱 **Backup automatico del telefono**: abbina l’app mobile a quella desktop per salvare automaticamente sul computer foto e video originali da Android e iOS.
+- 🗓️ **Esplorazione nella timeline**: organizza automaticamente per data di scatto, consente di raggiungere rapidamente le date e di navigare senza problemi nelle librerie grandi.
+- 😀 **Riconoscimento facciale**: raggruppa automaticamente la stessa persona, con funzioni per assegnare nomi, cercare persone e trovare foto di gruppo.
+- 🔍 **Ricerca immagini con IA**: descrivi il contenuto in linguaggio naturale per trovare con precisione foto e video.
+- 🧹 **Pulizia dei duplicati**: rileva i file duplicati tra dischi locali e NAS e spostali nel cestino con un clic.
+- 📁 **Conservazione della struttura delle cartelle**: visualizza i media secondo la struttura locale e sposta, copia, elimina e rinomina i file direttamente.
+- 🗺️ **Ricordi sulla mappa**: rivedi le foto sulla mappa in base alla posizione; le informazioni sulla posizione restano solo in locale.
+- 📚 **Album tematici**: raccogli foto da fonti diverse negli album senza spostare i file originali.
+- 🔒 **Impegno per la privacy**: le foto restano sempre in locale e non vengono mai caricate sul cloud.
 
 ![Screenshot: desktop app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/self-photos-screenshot.png?raw=true)
 
 > 👏 Unisciti a [Discord](https://discord.gg/VCqXcAz6Js) | Seguici su [X(Twitter)](https://x.com/wikkefly)
 
-# ✨ Funzioni principali
+## 1. Scansionare dischi PC, Mac, Linux e foto del NAS e riunirle
 
-## 1. Riunire foto e video sparsi
+Self Photos può scansionare foto e video dal computer, da unità esterne e NAS e indicizzare i ricordi sparsi in un’unica libreria multimediale locale.
 
-Self Photos analizza foto e video dal computer, da dischi esterni, da unità collegate e da NAS, poi li organizza in un'unica libreria multimediale locale.
-
-- **Scansione con un clic**: scopri rapidamente foto e video sul tuo computer e ricava automaticamente ora dello scatto, posizione, tipo di media e altri metadati
-- **Origini dati flessibili**: aggiungi cartelle locali, dischi esterni, posizioni di rete e altro; la vecchia pagina delle cartelle è stata trasformata in una pagina delle origini dati più chiara con una vista elenco migliorata
-- **Supporto SMB**: scansiona e indicizza foto e video su un NAS direttamente tramite SMB senza doverli prima copiare sul computer
-- **Regole di scansione flessibili**: definisci i percorsi di scansione, escludi cartelle, configura regole di percorsi annidati e filtra icone, immagini di cache e altri piccoli file irrilevanti in base alla dimensione
-- **Monitoraggio file e scansione manuale**: le origini locali possono essere monitorate in tempo reale e aggiornate dinamicamente; le origini non locali possono essere scansionate manualmente quando serve
-- **Rilevamento Live Photo**: rileva e collega automaticamente le Live Photo tra origini diverse, mantenendo insieme foto ferma e clip in movimento
+- **Creare una libreria locale unificata**: estrarre automaticamente dai metadati EXIF data di scatto, posizione e altre informazioni e mostrarle nelle pagine timeline e mappa
+- **Scansionare i media sul NAS**: scansionare e indicizzare direttamente tramite SMB foto e video sul NAS, senza copiarli prima sul computer
+- **Regole di scansione flessibili**: specificare i percorsi, escludere cartelle e configurare regole per percorsi annidati; impostare una soglia di dimensione per filtrare icone, immagini cache e altri file piccoli
+- **Monitoraggio dei file e scansione manuale**: monitorare in tempo reale le modifiche alle unità locali (aggiunte, eliminazioni o spostamenti) e aggiornare automaticamente la libreria; aggiornare con un clic le fonti non locali come il NAS
+- **Rilevamento Live Photo**: quando nella stessa cartella vengono trovati una foto e un video con lo stesso nome, associarli automaticamente come Live Photo
 
 ![Screenshot: scan select](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/scan-screenshot.png?raw=true)
 
 ## 2. Eseguire il backup degli album mobili sul computer
 
-Dopo aver installato l'app mobile Self Photos, abbinala all'app desktop sulla stessa rete locale per eseguire il backup di foto e video da dispositivi Android e iOS sul computer o su un disco esterno.
+Installa l’app mobile Self Photos e abbinala all’app desktop sulla stessa rete locale per eseguire il backup di foto e video da dispositivi Android e iOS sul computer o su un’unità esterna.
 
-- **Collega e fai il backup**: dopo aver selezionato gli album mobili, le nuove foto e video possono sincronizzarsi automaticamente con il computer
-- **Backup manuale**: scegli foto e video specifici quando devi salvarli
-- **Backup per intervallo di date**: salva solo foto e video recenti, utile per organizzare velocemente nuovi contenuti
-- **Qualità originale**: conserva foto e video originali senza compressione o perdita di qualità
+- **Backup automatico**: dopo aver selezionato gli album mobili, le nuove foto e i nuovi video vengono sincronizzati automaticamente con il computer
+- **Backup per intervallo di date**: esegui il backup solo di foto e video di un periodo recente oppure seleziona l’intero intervallo
+- **Backup per tipo**: scegli di eseguire il backup solo delle foto, solo dei video o di entrambi per impostazione predefinita
+- **Qualità originale**: salva foto e video originali senza compressione o perdita di qualità
 - **Gestione indipendente di più dispositivi**: imposta cartelle di backup separate per telefoni diversi, con regole per sottocartelle e nomi file, ad esempio `E:/Backup/iPhone 16 Pro Max/2025/2025-12/2025.12.01_IMG_1234.jpg`
-- **Trasferimento su rete locale**: i backup non usano dati mobili; la velocità dipende dalla rete locale e dalle prestazioni del disco
+- **Trasferimento sulla rete locale**: i backup non consumano dati mobili; la velocità dipende dalla rete locale e dalle prestazioni del disco
 
 ![Screenshot: mobile app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/screenshot-mobile.png?raw=true)
 
 ## 3. Rivivere i ricordi con la timeline
 
-Self Photos organizza la tua libreria in base al vero momento di scatto di foto e video, così puoi tornare a un giorno, mese o anno preciso come se sfogliassi un diario.
+Self Photos organizza automaticamente la libreria in base all’ora effettiva dello scatto di foto e video e analizza i metadati EXIF per estrarre orari precisi.
 
-- **Archiviazione automatica per data di scatto**: foto e video vengono ordinati in base a quando sono stati scattati, non solo in base alla data di creazione del file
-- **Salto rapido alla data**: passa rapidamente a un anno o a un mese specifico tramite timeline e navigazione per data
-- **Scorrimento fluido per grandi librerie**: esperienza desktop ottimizzata che resta scorrevole anche con centinaia di migliaia di foto
-- **Anteprima al passaggio del mouse**: passa sopra per vedere rapidamente l'anteprima di foto e video, rendendo la navigazione e il filtraggio molto più veloci
-- **Video player integrato**: riproduci i video direttamente nell'app, con supporto ai formati che dipende dai codec del sistema
-- **Più modi per sfogliare**: usa la timeline, la struttura originale delle cartelle, i preferiti, l'app predefinita del sistema o mostra i file nel file manager di sistema
+- **Passaggio rapido a una data**: raggiungi rapidamente un anno, mese o giorno specifico usando timeline e navigazione per data
+- **Navigazione fluida nelle librerie grandi**: esperienza desktop ottimizzata, fluida anche con milioni di foto
+- **Anteprima al passaggio del mouse**: visualizza rapidamente foto e video in anteprima passando il mouse, per navigare e filtrare molto più velocemente
+- **Lettore video integrato**: riproduci i video direttamente nell’app; il supporto dei formati dipende dai codec del sistema
 
 ![Screenshot: timeline](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/timeline.png?raw=true)
 
-## 4. Organizzare i momenti importanti con gli album
+## 4. Riconoscimento facciale
 
-Oltre all'organizzazione automatica per tempo e struttura delle cartelle, Self Photos include gli album per raccogliere attivamente media di viaggi, famiglia, progetti, festività o temi specifici.
+Self Photos riconosce in modo intelligente i volti nelle foto e nei video, raggruppa automaticamente la stessa persona e la rende disponibile nella timeline, nelle cartelle e nelle altre pagine.
 
-- **Crea album tematici**: raccogli foto e video da origini e date diverse in un solo album
-- **Mantieni i file originali al loro posto**: gli album organizzano e mostrano i contenuti senza spostare i file originali
-- **Pensato per collezioni durature**: matrimoni, crescita dei figli, raccolte di viaggio, risorse creative e altre collezioni importanti possono avere ciascuna il proprio album
+- **Raggruppamento automatico dei volti**: riconosci i volti e unisci più volti della stessa persona in un’unica persona per una visualizzazione centralizzata
+- **Dare un nome e fissare le persone**: assegna un nome alle persone riconosciute e fissale per trovare rapidamente quelle importanti
+- **Cercare per persona**: cerca foto e video per persona in qualsiasi elenco di foto
+- **Trovare le foto di gruppo**: seleziona più persone contemporaneamente per trovare rapidamente le foto che le includono tutte
+- **Nascondere le persone indesiderate**: nascondi con un clic una persona che non vuoi visualizzare durante la navigazione
+- **Copertina personalizzata**: cambia la foto di copertina di ogni persona e scegli quella più rappresentativa
 
-![Screenshot: album](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/album.png?raw=true)
+![Screenshot: face recognition](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/face-recognition.png?raw=true)
 
-## 5. Pulire, gestire e godersi una nuova esperienza desktop
+## 5. Riconoscimento delle immagini con IA e ricerca testuale
 
-Self Photos non serve solo a guardare. Ti aiuta anche a gestire la tua libreria multimediale in modo più efficiente.
+Self Photos include modelli IA integrati che comprendono il contenuto di foto e video e consentono di cercare direttamente nella libreria usando il linguaggio naturale.
 
-- **Rilevamento duplicati**: trova in modo intelligente foto e video duplicati, visualizzali in anteprima ed eliminali in blocco per pulire la libreria
-- **Nuovo sistema di design**: un'interfaccia e un'esperienza desktop più moderne per la gestione a lungo termine di grandi archivi di foto e video
-- **Preferiti e confronto**: contrassegna rapidamente i media importanti come preferiti e confronta le foto affiancate nella pagina di anteprima
-- **Archiviazione e velocità illimitate**: la capacità è limitata solo dai tuoi dischi, e la velocità di trasferimento solo dalla rete locale e dalle prestazioni dei dispositivi
-- **Privato e sicuro**: l'app funziona offline; foto e video non lasciano i tuoi dispositivi, e il backup mobile richiede solo che i dispositivi siano sulla stessa rete locale
+- **Riconoscimento dei contenuti con IA**: riconosce intelligentemente soggetti, scene e dettagli di foto e video, fornendo la base per la ricerca testuale
+- **Ricerca in linguaggio naturale**: inserisci una descrizione naturale per cercare foto e video corrispondenti, senza tag manuali
+- **Query lunghe e precise**: cerca frasi lunghe come «un bambino gioca con un palloncino blu mentre i suoi genitori si baciano sullo sfondo»; l’IA troverà con precisione la foto e la posizionerà al primo posto
+- **Categorie intelligenti**: i temi comuni sono categorizzati per impostazione predefinita e mostrano i risultati appena vengono aperti
+
+![Screenshot: AI search](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/vision-search.png?raw=true)
+
+## 6. Rilevamento dei duplicati e pulizia con un clic
+
+- **Rilevamento dei duplicati**: identifica intelligentemente foto e video duplicati, inclusi quelli tra dischi locali e NAS
+- **Raggruppamento per directory**: raggruppa automaticamente i duplicati in base al nome della directory in cui si trovano, così puoi esaminarli e pulirli una directory alla volta, come avviene nei casi reali di cartelle simili
+- **Selezione manuale o automatica**: scegli manualmente i file da eliminare in ogni gruppo oppure ordina per nome, percorso, dimensione o numero di duplicati e conserva il primo, l’ultimo o i file della directory corrente
+- **Pulizia con un clic**: dopo la selezione multipla, sposta i file selezionati nel cestino. Per i file SMB, che non dispongono di cestino, l’app chiederà conferma prima dell’eliminazione permanente
 
 ![Screenshot: duplicate detection](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/duplicate.png?raw=true)
 
+## 7. Esplorare e gestire la struttura delle cartelle locali
+
+Servizi come Google Photos e Immich danno meno importanza alla struttura delle cartelle. In quanto gestore fotografico locale, Self Photos rispetta la struttura che hai già creato, perché può conservare la tua precedente organizzazione, come raggruppamenti e nomi dei file.
+
+- **Esplorare per cartella nelle fonti dati**: la pagina delle fonti dati mostra per impostazione predefinita i file in una gerarchia di cartelle e indica chiaramente dove si trovano
+- **Gestire come in Esplora file o Finder**: sposta, copia, elimina e rinomina i file direttamente nell’app, senza passare a Explorer o Finder
+- **I futuri agenti comprenderanno la gerarchia**: il futuro agente di gestione fotografica userà la gerarchia delle cartelle come contesto per riconoscere meglio le foto e aiutarti a organizzarle
+
+![Screenshot: folder view](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/folder.png?raw=true)
+
+## 8. Rivivere i ricordi sulla mappa
+
+Se le foto includono informazioni sulla posizione, Self Photos può mostrarle su una mappa.
+
+- **Rivedere le foto per luogo**: trova rapidamente sulla mappa foto e video scattati in una posizione
+- **Privacy prima di tutto**: le informazioni sulla posizione vengono usate solo localmente per l’indicizzazione e la visualizzazione e non vengono mai caricate sul cloud
+
+![Screenshot: map](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/map-screenshot.png?raw=true)
+
+## 9. Album
+
+Oltre all’organizzazione automatica per tempo, posizione e cartella, Self Photos include album per raccogliere attivamente media di viaggi, famiglia, progetti, vacanze o qualsiasi tema.
+
+- **Creare album tematici**: raccogli foto e video da fonti e date diverse in un unico album
+- **Conservare i file originali al loro posto**: gli album organizzano e mostrano i media senza spostare i file originali
+- **Ideali per raccolte a lungo termine**: matrimoni, crescita dei figli, raccolte di viaggi, risorse creative e altro possono avere ciascuno il proprio album
+
+![Screenshot: album](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/album.png?raw=true)
+
+## 10. Il nostro forte impegno per la privacy
+
+- **Privacy prima di tutto**: Self Photos è locale e orientato alla privacy. Le tue foto, inclusi i metadati, restano sempre in locale e non vengono mai caricate sul cloud
+- **Garanzia di sicurezza**: non modifichiamo né eliminiamo le tue foto a meno che tu non scelga di farlo mentre le organizzi nell’app. Per impostazione predefinita, le eliminazioni spostano solo i file nel cestino, lasciandoti la possibilità di recuperare gli errori
+
 # ⬇️ Download
 
-Scarica il più recente **installer desktop** e la **app mobile** dal sito ufficiale: [https://selfphotos.com/download](https://selfphotos.com/download)
+- GitHub (solo desktop): [https://github.com/SelfPhotos/SelfPhotos/releases/latest](https://github.com/SelfPhotos/SelfPhotos/releases/latest)
+- Sito ufficiale (app desktop e Android/iOS): [https://selfphotos.com/download](https://selfphotos.com/download)

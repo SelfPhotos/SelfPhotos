@@ -7,6 +7,8 @@
 
 **爱看相册**是一款由 Rust 打造的**跨平台照片/视频管理桌面软件**，支持 Windows、macOS 和 Linux（即将发布），并且有 Android、iOS App 可以备份手机相册到电脑。核心功能包括：
 
+## ✨ 核心功能
+
 - 💽 **统一媒体库**：扫描电脑、移动硬盘及 NAS 的照片视频，汇总到一处本地媒体库。
 - 📱 **手机自动备份**：手机 App 与桌面端配对，自动把 Android/iOS 相册原图备份到电脑。
 - 🗓️ **时间轴浏览**：按拍摄时间自动整理，快速跳转日期并流畅浏览大图库。
@@ -23,8 +25,6 @@
 > 👏 扫码关注微信公众号，加入交流群，获取最新内部信息和福利。
 >
 > <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/wechat-qrcode.jpg?raw=true" alt="Wechat QR Code" height="150">
-
-# ✨ 核心功能
 
 ## 一、扫描PC/Mac/Linux硬盘照片，以及NAS照片（未来还有云存储），并汇总到一处展示
 

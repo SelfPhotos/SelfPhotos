@@ -7,6 +7,8 @@
 
 **Self Photos** is a **cross-platform photo and video management desktop app** built with Rust. It supports Windows, macOS, and Linux (coming soon), and has Android and iOS apps for backing up phone albums to your computer. Core features include:
 
+## ✨ Core Features
+
 - 💽 **Unified media library**: scan photos and videos from your computer, external drives, and NAS, and bring them together into one local library.
 - 📱 **Automatic phone backup**: pair the mobile app with the desktop app to automatically back up original photos and videos from Android and iOS to your computer.
 - 🗓️ **Timeline browsing**: automatically organize by shooting time, quickly jump to dates, and smoothly browse large libraries.
@@ -21,8 +23,6 @@
 ![Screenshot: desktop app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/self-photos-screenshot.png?raw=true)
 
 > 👏 Join [Discord](https://discord.gg/VCqXcAz6Js) | Follow on [X(Twitter)](https://x.com/wikkefly)
-
-# ✨ Core Features
 
 ## 1. Scan PC/Mac/Linux Drives and NAS Photos, and Bring Them Together in One Place
 
