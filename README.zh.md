@@ -5,19 +5,28 @@
 
 <p align="center"><a href="./README.md">English</a> | 中文 | <a href="./README.de.md">Deutsch</a> | <a href="./README.es.md">Español</a> | <a href="./README.fr.md">Français</a> | <a href="./README.hi.md">हिन्दी</a> | <a href="./README.it.md">Italiano</a> | <a href="./README.ja.md">日本語</a> | <a href="./README.pt.md">Português</a> | <a href="./README.ru.md">Русский</a></p>
 
-**爱看相册**是一款由 Rust 打造的**跨平台照片/视频管理桌面软件**，支持 Windows、macOS 和 Linux（即将发布），并且有 Android、iOS App 可以备份手机相册到电脑。
+**爱看相册**是一款由 Rust 打造的**跨平台照片/视频管理桌面软件**，支持 Windows、macOS 和 Linux（即将发布），并且有 Android、iOS App 可以备份手机相册到电脑。核心功能包括：
 
-它就像一个完全本地化的 Google 相册（或者早年的 Picasa 软件）—— 帮你把电脑、移动硬盘、NAS 和手机里的照片视频统一整理起来，同时更注重隐私与掌控：你的照片不会上传到云端，只保存在你自己的设备里。
+- 💽 **统一媒体库**：扫描电脑、移动硬盘及 NAS 的照片视频，汇总到一处本地媒体库。
+- 📱 **手机自动备份**：手机 App 与桌面端配对，自动把 Android/iOS 相册原图备份到电脑。
+- 🗓️ **时间轴浏览**：按拍摄时间自动整理，快速跳转日期并流畅浏览大图库。
+- 😀 **人脸识别**：自动聚合同一人物，支持命名、搜索与多人合影查找。
+- 🔍 **AI 以文搜图**：用自然语言描述内容即可精准检索照片和视频。
+- 🧹 **重复清理**：检测本地与 NAS 间的重复文件，并支持一键移动到回收站。
+- 📁 **保留目录结构**：按本地目录展示，可直接移动、复制、删除和重命名文件。
+- 🗺️ **地图回忆**：按地理位置在地图上回看照片，位置信息仅存本地。
+- 📚 **主题相册**：把不同来源的照片归入相册，组织展示而不移动原文件。
+- 🔒 **隐私承诺**：照片永远留在本地，不上传云端，充分尊重、保障您的隐私安全。
 
 ![Screenshot: desktop app](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/self-photos-screenshot.png?raw=true)
 
-> 👏 扫码关注微信公众号，获取下载链接，抢先体验测试版的最新功能，AI 功能版也会第一时间在群里发出。
+> 👏 扫码关注微信公众号，加入交流群，获取最新内部信息和福利。
 >
 > <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/wechat-qrcode.jpg?raw=true" alt="Wechat QR Code" height="150">
 
 # ✨ 核心功能
 
-## 一、扫描PC/Mac/Linux硬盘照片，索引远程NAS照片（未来还有网盘和云存储），并汇总展示到一处
+## 一、扫描PC/Mac/Linux硬盘照片，以及NAS照片（未来还有云存储），并汇总到一处展示
 
 爱看相册可以扫描电脑、移动硬盘以及 NAS 中的照片和视频，把分散在不同位置的回忆统一索引为一个本地媒体库。
 
@@ -46,11 +55,10 @@
 
 爱看相册会根据照片、视频的实际拍摄时间自动整理媒体库，整理过程中会自动解析照片视频内的 EXIF 元数据以提取准确拍摄时间。
 
-- **快速跳转日期**：通过时间轴和日期定位，迅速跳到某年某月
+- **快速跳转日期**：通过时间轴和日期定位，迅速跳到某年某月某日
 - **丝滑浏览大图库**：充分优化的桌面体验，即使面对**百万级**照片库也能流畅使用
-- **Hover Preview**：鼠标悬停即可快速预览照片和视频，大幅提升筛选与浏览效率
+- **悬浮预览**：鼠标悬停即可快速预览照片和视频，大幅提升筛选与浏览效率
 - **内置视频播放器**：直接在应用中播放视频，支持格式取决于系统解码器
-- **多种浏览方式**：支持时间线、原始目录结构、收藏、用系统默认应用打开，以及定位到文件所在系统文件夹
 
 ![Screenshot: timeline](https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/timeline.png?raw=true)
 
@@ -123,6 +131,10 @@ Google Photos、Immich 等在线照片管理服务，都在淡化“目录结构
 
 # ⬇️ 下载
 
-- (推荐)扫码关注微信公众号，获取最新 **桌面端程序** 和 **移动端 App** **稳定版**下载链接，通过公众号菜单栏加入群聊，可获取最新信息和**内测版**下载链接<br />
+- Github(Desktop only): <a href="https://github.com/SelfPhotos/SelfPhotos/releases/latest">https://github.com/SelfPhotos/SelfPhotos/releases/latest</a>
+- 官网(Desktop & Android/iOS APP): <a href="https://selfphotos.com/download">https://selfphotos.com/download</a>
+
+# 关注我们
+
+- 扫码关注微信公众号，通过公众号菜单栏加入群聊
 <img src="https://github.com/SelfPhotos/SelfPhotos/blob/main/assets/wechat-qrcode.jpg?raw=true" alt="Wechat QR Code" height="150">
-- 从官网 <a href="https://aikanxiangce.com/download">https://aikanxiangce.com/download</a> 下载
